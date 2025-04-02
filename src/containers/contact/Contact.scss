@@ -1,0 +1,54 @@
+@import "../../scss/App.scss";
+
+#contact {
+  min-height: 100%;
+  background: linear-gradient(to left top, rgba(0, 0, 0, 0.75), $primary-color),
+    url("../../img/reactdefault.png");
+  background-size: cover;
+  padding: 4rem;
+
+  .lg-heading {
+    background: rgba(lighten($primary-color, 2), 0.5);
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+  }
+
+  .boxes {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+
+    div {
+      @include easeOut;
+      border: 3px #fff solid;
+      font-size: 2rem;
+      margin-bottom: 3rem;
+      padding: 1.5rem 2.5rem;
+
+      @media (max-width: 574px) {
+        font-size: 1.5rem;
+      }
+
+      &:hover {
+        background: $secondary-color;
+        color: set-text-color($secondary-color);
+        padding: 1rem 2rem;
+
+        span {
+          color: set-text-color($secondary-color);
+        }
+      }
+    }
+  }
+
+  .services {
+    h2 {
+      color: $secondary-color;
+      padding-bottom: 6px;
+      text-underline-offset: 6px;
+      text-decoration: underline solid 2px;
+    }
+  }
+}
