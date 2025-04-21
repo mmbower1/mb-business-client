@@ -1,4 +1,5 @@
 import React from "react";
+import profilePhoto from "../../assets/portrait.jpg";
 
 import { RevealOnScroll } from "../RevealOnScroll";
 
@@ -10,6 +11,12 @@ export const Home = () => {
     >
       <RevealOnScroll>
         <div className="text-center z-10 px-4">
+          <img
+            src={profilePhoto}
+            alt=""
+            className="h-60 w-70 rounded-full mx-auto"
+          />
+          <br />
           <h1
             className="
             text-5xl 
