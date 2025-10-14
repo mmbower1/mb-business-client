@@ -54,12 +54,12 @@ export const Projects = () => {
               </div>
             </div>
             <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all">
-              <h3 className="text-xl font-bold mb-2">Cloud Platform 2</h3>
+              <h3 className="text-xl font-bold mb-2">NBA API App</h3>
               <p className="text-gray-400 mb-4"></p>
-              <p>
+              {/* <p>
                 Scalable cloud infrastructure management with real-time
                 monitoring and automated scaling.
-              </p>
+              </p> */}
               <div className="flex flex-wrap gap-2 mb-4">
                 {["React", "NodeJS", "MongoDB", "AWS"].map((tech, key) => (
                   <span
@@ -84,10 +84,10 @@ export const Projects = () => {
             </div>
             <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all">
               <h3 className="text-xl font-bold mb-2">Cloud Platform 3</h3>
-              <p className="text-gray-400">
+              {/* <p className="text-gray-400">
                 Scalable cloud infrastructure management with real-time
                 monitoring and automated scaling.
-              </p>
+              </p> */}
               <div className="flex flex-wrap gap-2 mb-4">
                 {["React", "NodeJS", "MongoDB", "AWS"].map((tech, key) => (
                   <span
@@ -113,10 +113,10 @@ export const Projects = () => {
             <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all">
               <h3 className="text-xl font-bold mb-2">Cloud Platform</h3>
               <p className="text-gray-400 mb-4"></p>
-              <p>
+              {/* <p>
                 Scalable cloud infrastructure management with real-time
                 monitoring and automated scaling.
-              </p>
+              </p> */}
               <div className="flex flex-wrap gap-2 mb-4">
                 {["React", "NodeJS", "MongoDB", "AWS"].map((tech, key) => (
                   <span
