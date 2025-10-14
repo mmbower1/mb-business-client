@@ -111,6 +111,8 @@ export const About = () => {
               <h3 className="text-xl font-bold mb-4">📁 Work Experience</h3>
               <div className="space-y-4 text-gray-300">
                 <div>
+                  <h4>Technician (2024-2025)</h4>
+                  <br />
                   <h4>
                     IT Subject Matter Expert @ Solaredge Technologies
                     (2021-2023)
