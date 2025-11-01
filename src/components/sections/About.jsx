@@ -3,21 +3,29 @@ import { RevealOnScroll } from "../RevealOnScroll";
 export const About = () => {
   const frontendSkills = [
     "React",
-    "Javascript",
+    "JavaScript",
+    "TypeScript",
     "Redux",
     "Scss",
     "Bootstrap",
     "Html",
+    "Document Object Model",
     "Chrome tools",
+    "Grok3",
   ];
   const backendSkills = [
+    "Unix",
     "Node.js",
     "Express",
     "MongoDB",
     "SQL",
     "HTTPS",
     "Postman",
+    "Model View Controller",
     "AWS",
+    "Grok3",
+    "Apache",
+    "Package Manager",
   ];
 
   return (
@@ -43,9 +51,15 @@ export const About = () => {
             About me
           </h2>
           <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
-            <p className="text-gray-300 mb-6">
-              Passionate developer with expertise in building scalable web
-              applications and creating innovative solutions
+            <p
+              className="text-gray-300 mb-6"
+              style="font-family: Arial, sans-serif;"
+            >
+              Passionate developer since 2017 with expertise in building
+              scalable full-stack web applications in creating dynamic,
+              innovative, high-level language solutions using package managers,
+              artificial intelligence and blockchain technology. I am available
+              for consulting.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">

@@ -32,13 +32,7 @@ export const Home = () => {
           >
             Hi, I'm Matt
           </h1>
-          <p className="text-gray-400 text-lg mb-8 max-w-lg mx-auto">
-            I am a full-stack developer who loves crafting clean, scalable web
-            applications. I have also worked in professional Information
-            Technology positions in the private sector as well as for the State
-            of California. My goal is to build solutions that offer both
-            exceptional performance and a delightful user experience.
-          </p>
+          <p className="text-gray-400 text-lg mb-8 max-w-lg mx-auto"></p>
           <div className="flex justify-center space-x-4">
             <a
               href="#projects"

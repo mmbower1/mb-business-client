@@ -34,7 +34,7 @@ export const Projects = () => {
                 speed, tire size, and AC usage.
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
-                {["React", "NodeJS", "MongoDB", "AWS"].map((tech, key) => (
+                {["React", "Javascript", "SCSS", "AWS"].map((tech, key) => (
                   <span
                     key={key}
                     className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 
@@ -64,7 +64,7 @@ export const Projects = () => {
                 under legal authority in the United States.
               </p>
               <div className="flex flex-wrap gap-2">
-                {["React", "NodeJS", "MongoDB", "AWS"].map((tech, key) => (
+                {["React", "NodeJS", "MongoDB", "Vercel"].map((tech, key) => (
                   <span
                     key={key}
                     className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 
@@ -92,7 +92,7 @@ export const Projects = () => {
                 this free NBA application programming interface source.
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
-                {["React", "NodeJS", "MongoDB", "AWS"].map((tech, key) => (
+                {["React", "Javascript", "", "AWS"].map((tech, key) => (
                   <span
                     key={key}
                     className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 
