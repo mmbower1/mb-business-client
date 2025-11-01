@@ -29,9 +29,9 @@ export const Projects = () => {
               <h3 className="text-xl font-bold mb-2">Tesla Interactice UI</h3>
               <p className="text-gray-400 mb-4"></p>
               <p>
-                Clean appearance and interactive web page using React to measure
-                the amount of range for a Tesla vehicle with added factors of
-                weather, speed, tire size, and AC usage.
+                Clean appearance and interactive web page built with React.jsx
+                to measure the range for a Tesla with added factors of weather,
+                speed, tire size, and AC usage.
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
                 {["React", "NodeJS", "MongoDB", "AWS"].map((tech, key) => (
@@ -60,8 +60,8 @@ export const Projects = () => {
               <p className="text-gray-400 mb-4"></p>
               <p>
                 A business site built with the MERN stack intended for
-                immigrants to seek the help they need under legal authority in
-                the United States.
+                immigrants to seek appointments and the information they need
+                under legal authority in the United States.
               </p>
               <div className="flex flex-wrap gap-2">
                 {["React", "NodeJS", "MongoDB", "AWS"].map((tech, key) => (
@@ -88,8 +88,8 @@ export const Projects = () => {
               <h3 className="text-xl font-bold mb-2">NBA API</h3>
               <p className="text-gray-400 mb-4"></p>
               <p>
-                If you're a fan of the NBA, get all current roster info needed
-                using this free NBA application programming interface source.
+                If you're an NBA fan, get all current roster info needed using
+                this free NBA application programming interface source.
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
                 {["React", "NodeJS", "MongoDB", "AWS"].map((tech, key) => (
