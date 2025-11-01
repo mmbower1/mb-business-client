@@ -28,10 +28,11 @@ export const Projects = () => {
             <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all">
               <h3 className="text-xl font-bold mb-2">Tesla Interactice UI</h3>
               <p className="text-gray-400 mb-4"></p>
-              {/* <p>
-                Scalable cloud infrastructure management with real-time
-                monitoring and automated scaling.
-              </p> */}
+              <p>
+                Clean appearance and interactive web page using React to measure
+                the amount of range for a Tesla vehicle with added factors of
+                weather, speed, tire size, and AC usage.
+              </p>
               <div className="flex flex-wrap gap-2 mb-4">
                 {["React", "NodeJS", "MongoDB", "AWS"].map((tech, key) => (
                   <span
@@ -58,8 +59,9 @@ export const Projects = () => {
               <h3 className="text-xl font-bold mb-2">Accent Legal</h3>
               <p className="text-gray-400 mb-4"></p>
               <p>
-                Scalable cloud infrastructure management with real-time
-                monitoring and automated scaling.
+                A business site built with the MERN stack intended for
+                immigrants to seek the help they need under legal authority in
+                the United States.
               </p>
               <div className="flex flex-wrap gap-2">
                 {["React", "NodeJS", "MongoDB", "AWS"].map((tech, key) => (
@@ -83,12 +85,12 @@ export const Projects = () => {
               </div>
             </div>
             <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all">
-              <h3 className="text-xl font-bold mb-2">NBA API App</h3>
+              <h3 className="text-xl font-bold mb-2">NBA API</h3>
               <p className="text-gray-400 mb-4"></p>
-              {/* <p>
-                Scalable cloud infrastructure management with real-time
-                monitoring and automated scaling.
-              </p> */}
+              <p>
+                If you're a fan of the NBA, get all current roster info needed
+                using this free NBA application programming interface source.
+              </p>
               <div className="flex flex-wrap gap-2 mb-4">
                 {["React", "NodeJS", "MongoDB", "AWS"].map((tech, key) => (
                   <span
