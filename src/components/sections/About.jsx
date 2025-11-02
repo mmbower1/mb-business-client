@@ -53,7 +53,7 @@ export const About = () => {
           <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
             <p
               className="text-gray-300 mb-6"
-              style="font-family: Arial, sans-serif;"
+              // style={{ "font-family": "Arial, sans-serif" }}
             >
               Passionate developer since 2017 with expertise in building
               scalable full-stack web applications in creating dynamic,
