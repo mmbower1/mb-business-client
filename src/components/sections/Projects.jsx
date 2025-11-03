@@ -24,8 +24,8 @@ export const Projects = () => {
           >
             Featured Projects
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="p-6 rounded-xl border border-white/20 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all">
               <h3 className="text-xl font-bold mb-2">Tesla Interactice UI</h3>
               <p className="text-gray-400 mb-4"></p>
               <p>
@@ -33,6 +33,7 @@ export const Projects = () => {
                 to measure the range for a Tesla with added factors of weather,
                 speed, tire size, and AC usage.
               </p>
+
               <div className="flex flex-wrap gap-2 mb-4">
                 {["React", "Javascript", "SCSS", "AWS"].map((tech, key) => (
                   <span
@@ -55,7 +56,7 @@ export const Projects = () => {
                 </a>
               </div>
             </div>
-            <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all">
+            <div className="p-6 rounded-xl border border-white/20 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all">
               <h3 className="text-xl font-bold mb-2">Accent Legal</h3>
               <p className="text-gray-400 mb-4"></p>
               <p>
@@ -84,7 +85,7 @@ export const Projects = () => {
                 </a>
               </div>
             </div>
-            <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all">
+            <div className="p-6 rounded-xl border border-white/20 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all">
               <h3 className="text-xl font-bold mb-2">NBA API</h3>
               <p className="text-gray-400 mb-4"></p>
               <p>
@@ -113,12 +114,12 @@ export const Projects = () => {
                 </a>
               </div>
             </div>
-            <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all">
+            <div className="p-6 rounded-xl border border-white/20 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all">
               <h3 className="text-xl font-bold mb-2">Cloud Platform 3</h3>
-              {/* <p className="text-gray-400">
+              <p className="text-gray-400">
                 Scalable cloud infrastructure management with real-time
                 monitoring and automated scaling.
-              </p> */}
+              </p>
               <div className="flex flex-wrap gap-2 mb-4">
                 {["React", "NodeJS", "MongoDB", "AWS"].map((tech, key) => (
                   <span

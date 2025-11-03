@@ -50,7 +50,7 @@ export const About = () => {
           >
             About me
           </h2>
-          <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
+          <div className="rounded-xl p-8 border-white/20 border hover:-translate-y-1 transition-all">
             <p
               className="text-gray-300 mb-6"
               // style={{ "font-family": "Arial, sans-serif" }}
@@ -111,14 +111,20 @@ export const About = () => {
               <h3 className="text-xl font-bold mb-4">🏫 Education</h3>
               <ul className="list-disc list-inside text-gray-300 space-y-2">
                 <li>
-                  UC Davis{" "}
-                  <strong>Trilogy Professional & Continuing Education</strong>{" "}
-                  (2018)
+                  <strong>
+                    UC Davis Trilogy Professional & Continuing Education,
+                  </strong>{" "}
+                  Web Development (2018)
                 </li>
                 <br />
-                <li>B.A. San Jose State University (2015-17)</li>
+                <li>
+                  <strong>San Jose State University,</strong> B.A.
+                  Communications (2015-17)
+                </li>
                 <br />
-                <li>Santa Barbara City College (2013-15)</li>
+                <li>
+                  <strong>Santa Barbara City College</strong> (2013-15)
+                </li>
               </ul>
             </div>
             <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">

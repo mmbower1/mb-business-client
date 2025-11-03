@@ -39,6 +39,12 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
               Projects
             </a>
             <a
+              href="#youtube"
+              className="text-gray-300 hover:text-white transition-colors"
+            >
+              Youtube
+            </a>
+            <a
               href="#contact"
               className="text-gray-300 hover:text-white transition-colors"
             >

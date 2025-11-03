@@ -10,6 +10,7 @@ import { Navbar } from "./components/Navbar";
 import { About } from "./components/sections/About";
 import { Home } from "./components/sections/Home";
 import { Projects } from "./components/sections/Projects";
+import { Youtube } from "./components/sections/Youtube";
 import { Contact } from "./components/sections/Contact";
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
         <Home />
         <About />
         <Projects />
+        <Youtube />
         <Contact />
       </div>
     </>
