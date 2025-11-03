@@ -2,16 +2,16 @@ import React from "react";
 import { RevealOnScroll } from "../RevealOnScroll";
 
 // components
-import VideoScreen from "../VideoScreen";
+import VideoPlayer from "../VideoScreen";
 
 export const Youtube = () => {
   return (
     <section
       id="youtube"
-      className="min-h-screen flex items-center justify-center py-20"
+      className="min-h-[50vh] flex items-center justify-center py-20"
     >
       <RevealOnScroll>
-        <div className="px-4 w-150">
+        <div className="px-4">
           <h2
             className="text-3xl 
             font-bold 
@@ -34,9 +34,9 @@ export const Youtube = () => {
                   <li>50 videos</li>
                   <li>14,000 views</li>
                 </ul>
-                <VideoScreen />
               </div>
             </div>
+            <VideoPlayer />
           </div>
         </div>
       </RevealOnScroll>

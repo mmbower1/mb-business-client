@@ -1,15 +1,22 @@
 import React from "react";
+import ReactPlayer from "react-player";
 
-const VideoScreen = () => {
+const VideoPlayer = () => {
   return (
     <div>
-      <video
-        src="https://youtu.be/1XBwNgWyCSI?si=7_n2E2h_897F_H6c"
-        width="800"
-        height="450"
-      ></video>
+      <ReactPlayer
+        src="https://youtu.be/1XBwNgWyCSI?si=z4ofJQFNzOTOIhpn"
+        height="350px"
+        width="650px"
+      />
+      <br />
+      <ReactPlayer
+        src="https://youtu.be/Wg9wa6W7Tos?si=m2lT1uVxD6bHhG2P"
+        height="350px"
+        width="650px"
+      />
     </div>
   );
 };
 
-export default VideoScreen;
+export default VideoPlayer;
