@@ -9,7 +9,7 @@ body {
   font-family: "Space Grotesk", sans-serif;
 }
 
-@layer utilities {
+/* @layer utilities {
   @keyframes loading {
     0% {
       transform: translateX(-100%);
@@ -36,6 +36,32 @@ body {
   .animate-blink {
     animation: blink 0.8s step-end infinite;
   }
+} */
+
+/* The keyframe that does the actual spinning */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.logo.react {
+  animation: spin 8s linear infinite;
+  width: 180px;
+  animation: spin 8s linear infinite;
+  /* filter: drop-shadow(0 10px 20px rgba(59, 130, 246, 0.3)); */
+  transition: transform 0.3s ease;
+}
+
+.react-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 3rem 0;
 }
 
 .reveal {

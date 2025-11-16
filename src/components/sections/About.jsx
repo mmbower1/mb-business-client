@@ -1,4 +1,5 @@
 import { RevealOnScroll } from "../RevealOnScroll";
+import reactLogo from "../../assets/react.svg";
 
 export const About = () => {
   const frontendSkills = [
@@ -145,6 +146,13 @@ export const About = () => {
                   <h4>Software Developer @ Tallac Networks (2018-2019)</h4>
                 </div>
               </div>
+            </div>
+            <br />
+            <br />
+            <div className="react-logo-container">
+              <a href="https://react.dev" target="_blank">
+                <img src={reactLogo} className="logo react" alt="React logo" />
+              </a>
             </div>
           </div>
         </div>
