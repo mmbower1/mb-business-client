@@ -12,7 +12,7 @@ export const Home = () => {
       className="min-h-[70vh] flex items-center justify-center relative"
     >
       <RevealOnScroll>
-        <div className="text-center z-10 px-4">
+        <div className="text-center z-10 px-4 mt-28">
           <img
             src={profilePhoto}
             alt=""
