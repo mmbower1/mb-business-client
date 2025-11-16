@@ -48,3 +48,35 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; /* space between the two videos */
+  padding: 1rem;
+  max-width: 100%;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-top: 56.25%;
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.video-wrapper > .react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Optional: smaller on mobile */
+@media (max-width: 768px) {
+  .video-wrapper > .react-player {
+    height: 250px;
+    width: 450px;
+  }
+}

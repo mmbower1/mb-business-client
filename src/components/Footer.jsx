@@ -11,14 +11,14 @@ export const Footer = () => {
             <h3 className="text-2xl font-bold text-indigo-400 mb-4">
               MB Tutorials
             </h3>
-            <p className="text-gray-400 text-sm">
+            {/* <p className="text-gray-400 text-sm">
               Building awesome experiences with React & Tailwind CSS.
-            </p>
-            <div className="flex space-x-4 mt-6">
+            </p> */}
+            <div className="flex justify-center gap-6 mt-8">
               {/* Social Icons */}
               <a href="#" className="text-gray-400 hover:text-white transition">
                 <svg
-                  className="w-6 h-6"
+                  className="w-6 h-6 "
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
