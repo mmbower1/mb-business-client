@@ -21,7 +21,7 @@ export const About = () => {
     "SQL",
     "HTTPS",
     "Postman",
-    "Model View Controller",
+    "MVC",
     "AWS",
     "Grok3",
     "Apache",
@@ -61,9 +61,9 @@ export const About = () => {
               artificial intelligence and blockchain technology. I am available
               for consulting.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-1 gap-6">
               <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
-                <h3 className="text-xl font-bold mb-4">Frontend</h3>
+                <h3 className="text-xl font-bold mb-1">Frontend</h3>
                 <div className="flex flex-wrap gap-2">
                   {frontendSkills.map((tech, key) => (
                     <span
@@ -71,7 +71,7 @@ export const About = () => {
                       className="bg-blue-500/10 
                     text-blue-500 
                     py-1 
-                    px-3 
+                    px-1
                     rounded-full 
                     text-sm 
                     hover:bg-blue-500/20
@@ -92,7 +92,7 @@ export const About = () => {
                       className="bg-blue-500/10 
                     text-blue-500 
                     py-1 
-                    px-3 
+                    px-1 
                     rounded-full 
                     text-sm 
                     hover:bg-blue-500/20
