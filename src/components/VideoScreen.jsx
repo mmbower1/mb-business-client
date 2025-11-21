@@ -7,6 +7,14 @@ const VideoPlayer = () => {
       <div className="video-wrapper">
         <ReactPlayer
           className="react-player"
+          src="https://youtu.be/GSNLbLAQxuc"
+          height="350px"
+          width="650px"
+        />
+      </div>
+      <div className="video-wrapper">
+        <ReactPlayer
+          className="react-player"
           src="https://youtu.be/1XBwNgWyCSI?si=z4ofJQFNzOTOIhpn"
           height="350px"
           width="650px"

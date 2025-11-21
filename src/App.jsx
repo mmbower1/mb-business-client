@@ -30,8 +30,8 @@ function App() {
         <MobileNav menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <Home />
         <About />
-        <Projects />
         <Youtube />
+        <Projects />
         <Contact />
         <Footer />
       </div>
