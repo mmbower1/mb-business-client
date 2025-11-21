@@ -21,7 +21,7 @@ export const Home = () => {
           <br />
           <h1
             className="
-            text-5xl 
+            text-4xl 
             md:text-6xl 
             font-bold 
             mb-6 
@@ -32,7 +32,7 @@ export const Home = () => {
             text-transparent 
             leading-right"
           >
-            Hi, I'm Matthew
+            Matthew M. Bower
           </h1>
           <p className="text-gray-400 text-lg mb-8 max-w-lg mx-auto"></p>
           <div className="flex justify-center space-x-4">

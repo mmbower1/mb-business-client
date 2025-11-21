@@ -25,7 +25,7 @@ export const Youtube = () => {
           >
             YouTube: MB Tutorials
           </h2>
-          <div className="rounded-xl p-8 border-white/20 border hover:-translate-y-1 transition-all">
+          <div className="rounded-xl border-white/20 border hover:-translate-y-1 transition-all">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
                 <ul>

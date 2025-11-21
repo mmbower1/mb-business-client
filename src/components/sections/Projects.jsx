@@ -79,7 +79,7 @@ export const Projects = () => {
               </div>
               <div className="flex justify-between items-center">
                 <a
-                  href="https://tesla-r5l20lk12-mmbower1s-projects.vercel.app/"
+                  href="https://tesla-ui-taupe.vercel.app/"
                   className="text-blue-400 hover:text-blue-300 transition-colors my-4"
                 >
                   {" "}
