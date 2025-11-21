@@ -57,11 +57,12 @@ body {
 }
 
 .react-logo-container {
-  display: flex;
+  /* display: grid;
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 3rem 0;
+  padding: 3rem 0; */
+  margin-right: 300px;
 }
 
 .reveal {
@@ -104,5 +105,13 @@ body {
   .video-wrapper > .react-player {
     height: 250px;
     width: 450px;
+  }
+
+  .react-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 3rem 0;
   }
 }
