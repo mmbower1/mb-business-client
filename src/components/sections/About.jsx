@@ -56,11 +56,11 @@ export const About = () => {
               className="text-gray-300 mb-6"
               // style={{ "font-family": "Arial, sans-serif" }}
             >
-              Passionate developer since 2017 with expertise in building
-              scalable full-stack web applications in creating dynamic,
-              innovative, high-level language solutions using package managers,
-              artificial intelligence and blockchain technology. I am available
-              for consulting.
+              Passionate engineer with 8+ years of experience crafting fast,
+              scalable, and secure web applications from the ground up.
+              Specializing in modern JavaScript/TypeScript ecosystems,
+              cloud-native architecture, AI integration, and blockchain
+              solutions.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-1 gap-6">
               <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">

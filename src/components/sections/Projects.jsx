@@ -94,7 +94,7 @@ export const Projects = () => {
               <p className="text-gray-400 mb-4"></p>
               <p>
                 A freelance website built for a close friends' Horticulture Tree
-                Arbor business for Davis and Sacramento region. Scaled with
+                Arbor business for the Davis and Sacramento region. Scaled with
                 Vite, React, Scss, Firebase and Vercel.
               </p>
               <div className="flex flex-wrap gap-2">

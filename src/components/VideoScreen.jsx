@@ -12,6 +12,7 @@ const VideoPlayer = () => {
           width="650px"
         />
       </div>
+      <br />
       <div className="video-wrapper">
         <ReactPlayer
           className="react-player"
