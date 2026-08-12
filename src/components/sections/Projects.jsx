@@ -25,13 +25,13 @@ export const Projects = () => {
             Featured Projects
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                        <div className="p-6 rounded-xl border border-white/20 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all">
-              <h3 className="text-xl font-bold mb-2">Pearl Dating </h3>
+            <div className="p-6 rounded-xl border border-white/20 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all">
+              <h3 className="text-xl font-bold mb-2">Lockheart Dating </h3>
               <p className="text-gray-400 mb-4"></p>
               <p>
-                My first patented project, I built a dating app with MERN + Typescript. What makes this app different is
-                that swiping gets disabled once you have gained a match. Along with this, there is an accountability score
-                to prevent bad behaviors from users. Rather than endless swiping, lets make dating how it should be again. 
+                My first patented project, built this one-of-a-kind dating app with MERN + Typescript. What makes it different is
+                that swiping gets disabled once you have gained two matches. Along with this there is an accountability score
+                to prevent bad behaviors from users, such as notoriously ghosting. Rather than endless swiping, lets make dating how it should be, with true intentions. 
               </p>
 
               <div className="flex flex-wrap gap-2 mb-4">
@@ -50,7 +50,7 @@ export const Projects = () => {
               </div>
               <div className="flex justify-between items-center">
                 <a
-                  href="https://dating-app-pearl-nine.vercel.app/"
+                  href="lockheartdating.com"
                   className="text-blue-400 hover:text-blue-300 transition-colors my-4"
                 >
                   {" "}
@@ -154,7 +154,7 @@ export const Projects = () => {
             <div className="p-6 rounded-xl border border-white/20 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all">
               <h3 className="text-xl font-bold mb-2">Trivia</h3>
               <p className="text-gray-400">
-                Built with Vanilla JavaScript, HTML and CSS come test your
+                An oldie but goodie from 2018, pre AI days. Built from scratch with Vanilla JavaScript, HTML and CSS come test your
                 knowledge and find out your score.
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
