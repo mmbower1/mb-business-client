@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+/* keep section headings clear of the fixed navbar when jumping to #links */
+html {
+  scroll-padding-top: 4rem;
+}
+
 html,
 body {
   /* background: linear-gradient(to right, #ff7e5f, #feb47b); */
