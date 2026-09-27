@@ -24,7 +24,7 @@ function App() {
       <div
         className={`min-h-screen transition-opacity duration-700 ${
           isLoaded ? "opacity-100" : "opacity-0"
-        } bg-gradient-to-tl from-blue-950 to-black w-full text-gray-100`}
+        } bg-gradient-to-r from-slate-950 to-blue-950 w-full text-gray-100`}
       >
         <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <MobileNav menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
