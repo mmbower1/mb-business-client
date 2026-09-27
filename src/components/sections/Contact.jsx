@@ -2,6 +2,12 @@ import React from "react";
 import { RevealOnScroll } from "../RevealOnScroll";
 
 export const Contact = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert("Thanks! Your message has been sent. I'll get back to you soon.");
+    e.target.reset();
+  };
+
   return (
     <section id="contact" className="">
       <RevealOnScroll>
@@ -19,7 +25,10 @@ export const Contact = () => {
           >
             Get In Touch
           </h2>
-          <form className="space-y-6 max-w-2xl mx-auto p-6 sm:p-8 lg:p-10">
+          <form
+            onSubmit={handleSubmit}
+            className="space-y-6 max-w-2xl mx-auto p-6 sm:p-8 lg:p-10"
+          >
             {/* Name Field */}
             <div className="relative group">
               <input
