@@ -56,11 +56,12 @@ export const About = () => {
               className="text-gray-300 mb-6"
               // style={{ "font-family": "Arial, sans-serif" }}
             >
-              Passionate engineer with 8+ years of experience crafting fast,
-              scalable, and secure web applications from the ground up.
-              Specializing in modern JavaScript/TypeScript ecosystems,
-              cloud-native architecture, AI integration, and blockchain
-              solutions.
+              Full Stack Software Engineer and IT Specialist with 6+ years
+              building scalable, reliable web applications and resolving
+              complex technical issues. Skilled in JavaScript, TypeScript,
+              React, Node.js, REST APIs, and cloud platforms, with a proven
+              record of driving operational efficiency and strong user
+              experience outcomes.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-1 gap-6">
               <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
