@@ -32,7 +32,7 @@ export const About = () => {
   return (
     <section
       id="about"
-      className="min-h-[70vh] flex items-center justify-center pt-20 pb-4 md:pb-20"
+      className="min-h-[70vh] flex items-center justify-center pt-20 pb-4 md:pb-8"
     >
       <RevealOnScroll>
         <div className="max-w-3xl mx-auto px-4">
@@ -154,8 +154,6 @@ export const About = () => {
                 </div>
               </div>
             </div>
-            <br className="hidden md:block" />
-            <br className="hidden md:block" />
             <div className="react-logo-container md:col-span-2">
               <a href="https://react.dev" target="_blank">
                 <img src={reactLogo} className="logo react" alt="React logo" />

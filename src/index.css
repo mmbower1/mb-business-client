@@ -111,7 +111,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 3rem 0;
+  padding: 3rem 0 2rem;
 }
 
 @keyframes modal-pop {
@@ -173,9 +173,5 @@ body {
 
   .logo.react {
     width: 180px;
-  }
-
-  .react-logo-container {
-    padding: 3rem 0 2rem;
   }
 }
