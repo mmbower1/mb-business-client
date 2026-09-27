@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { HiMenu } from "react-icons/hi";
 
 const navLinks = [
   { id: "home", label: "Home" },
@@ -56,12 +57,15 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
             {" "}
             <span className="text-blue-500">MB</span> Tutorials
           </a>
-          <div
-            className="w-7 h-5 relative cursor-pointer z-40 md:hidden"
+          <button
+            type="button"
+            aria-label="Open menu"
+            aria-expanded={menuOpen}
+            className="-mr-2 flex h-11 w-11 items-center justify-center rounded-lg text-white cursor-pointer z-40 transition-colors hover:bg-white/10 md:hidden"
             onClick={() => setMenuOpen((prev) => !prev)}
           >
-            &#9776;
-          </div>
+            <HiMenu className="h-8 w-8" />
+          </button>
           <div className="hidden md:flex items-center space-x-8">
             {navLinks.map(({ id, label }) => (
               <a
