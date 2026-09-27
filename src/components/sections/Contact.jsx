@@ -20,7 +20,7 @@ export const Contact = () => {
   }, [showSent]);
 
   return (
-    <section id="contact" className="pb-16">
+    <section id="contact" className="pt-16 pb-16">
       <RevealOnScroll>
         <div className="">
           <BackToTopArrow />

@@ -48,7 +48,7 @@ export const Home = () => {
   return (
     <section
       id="home"
-      className="min-h-[70vh] flex items-center justify-center relative overflow-x-clip"
+      className="min-h-[70vh] flex items-center justify-center relative overflow-x-clip pb-12"
     >
       {/* Glowing background blobs */}
       <div className="absolute inset-0 overflow-x-clip pointer-events-none">
