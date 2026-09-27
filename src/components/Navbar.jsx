@@ -3,8 +3,8 @@ import React, { useEffect, useState } from "react";
 const navLinks = [
   { id: "home", label: "Home" },
   { id: "about", label: "About" },
-  { id: "projects", label: "Projects" },
   { id: "youtube", label: "Youtube" },
+  { id: "projects", label: "Projects" },
   { id: "contact", label: "Contact" },
 ];
 
