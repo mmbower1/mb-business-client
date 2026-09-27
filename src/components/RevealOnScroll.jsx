@@ -4,7 +4,7 @@ export const RevealOnScroll = ({ children }) => {
   const ref = useRef(null);
 
   useEffect(() => {
-    // reveal as soon as the section's top edge is about to scroll into view
+    // start the fade once the section's top edge is ~10% up from the bottom of the screen
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -12,7 +12,7 @@ export const RevealOnScroll = ({ children }) => {
           observer.disconnect();
         }
       },
-      { threshold: 0, rootMargin: "0px 0px 50px 0px" }
+      { threshold: 0, rootMargin: "0px 0px -10% 0px" }
     );
     if (ref.current) observer.observe(ref.current);
     return () => observer.disconnect();
