@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+/* fonts: Inter for body text, Space Grotesk for headings */
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", "Inter", ui-sans-serif, sans-serif;
+}
+
 /* keep section headings clear of the fixed navbar when jumping to #links */
 html {
   scroll-padding-top: 4rem;
@@ -11,7 +17,14 @@ body {
   color: #f3f4f6;
   margin: 0;
   padding: 0;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: var(--font-sans);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
 }
 
 /* blinking cursor on the loading screen */
