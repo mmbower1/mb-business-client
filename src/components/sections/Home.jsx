@@ -98,7 +98,7 @@ export const Home = () => {
             </p>
             <p className="mt-2 mb-8 flex items-center justify-center gap-2 text-gray-400">
               <FaMapMarkerAlt className="text-blue-400" />
-              Sacramento, CA
+              Sacramento, CA • San Francisco, CA
             </p>
             <div className="flex justify-center space-x-4">
               <a
