@@ -23,10 +23,17 @@ export const LoadingScreen = ({ onComplete }) => {
   }, [onComplete]);
 
   return (
-    <div className="fixed inset-0 z-50 bg-black text-gray-100 flex flex-col items-center justify-center">
-      <div className="mb-4 text-4xl font-mono font-bold">
-        {text}
-        <span className="animate-blink ml-1"> | </span>
+    <div className="fixed inset-0 z-50 bg-black text-gray-100 flex flex-col items-center justify-center px-4">
+      {/* invisible full text reserves the width so typing doesn't shift the line */}
+      <div className="mb-4 grid text-2xl sm:text-4xl font-mono font-bold whitespace-nowrap">
+        <span className="invisible col-start-1 row-start-1" aria-hidden="true">
+          {fullText}
+          <span className="ml-1"> | </span>
+        </span>
+        <span className="col-start-1 row-start-1">
+          {text}
+          <span className="animate-blink ml-1"> | </span>
+        </span>
       </div>
       <div className="w-[200px] h-[2px] bg-gray-800 rounded relative overflow-hidden">
         <div

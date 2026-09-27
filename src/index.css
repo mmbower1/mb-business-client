@@ -174,4 +174,8 @@ body {
   .logo.react {
     width: 180px;
   }
+
+  .react-logo-container {
+    padding: 3rem 0 2rem;
+  }
 }

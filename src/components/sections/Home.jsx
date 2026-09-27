@@ -17,7 +17,7 @@ import {
   SiGit,
   SiVercel,
 } from "react-icons/si";
-import { FaAws, FaChevronDown } from "react-icons/fa";
+import { FaAws, FaChevronDown, FaMapMarkerAlt } from "react-icons/fa";
 
 const techStack = [
   { name: "React", Icon: SiReact },
@@ -42,7 +42,7 @@ export const Home = () => {
   return (
     <section
       id="home"
-      className="min-h-[70vh] flex items-center justify-center relative"
+      className="min-h-[70vh] flex items-center justify-center relative overflow-x-clip"
     >
       {/* Glowing background blobs */}
       <div className="absolute inset-0 overflow-x-clip pointer-events-none">
@@ -65,7 +65,7 @@ export const Home = () => {
             text-4xl 
             md:text-6xl 
             font-bold 
-            mb-6 
+            mb-3 
             bg-gradient-to-r 
             from-blue-500 
             to-purple-600 
@@ -75,7 +75,13 @@ export const Home = () => {
             >
               Matthew M. Bower
             </h1>
-            <p className="text-gray-400 text-lg mb-8 max-w-lg mx-auto"></p>
+            <p className="text-gray-200 text-xl md:text-2xl font-semibold">
+              Full Stack Web Developer
+            </p>
+            <p className="mt-2 mb-8 flex items-center justify-center gap-2 text-gray-400">
+              <FaMapMarkerAlt className="text-blue-400" />
+              Sacramento, CA
+            </p>
             <div className="flex justify-center space-x-4">
               <a
                 href="#projects"
@@ -116,7 +122,7 @@ export const Home = () => {
               </a>
             </div>
             {/* Tech stack ticker */}
-            <div className="tech-marquee mx-auto mt-16 w-[min(48rem,calc(100vw-2rem))] overflow-hidden">
+            <div className="tech-marquee relative left-1/2 mt-16 w-screen -translate-x-1/2 overflow-hidden">
               <div className="tech-marquee-track flex w-max">
                 {[...techStack, ...techStack].map(({ name, Icon }, i) => (
                   <div

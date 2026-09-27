@@ -8,7 +8,7 @@ export const Youtube = () => {
   return (
     <section
       id="youtube"
-      className="min-h-[50vh] flex items-center justify-center py-20"
+      className="min-h-[50vh] flex items-center justify-center pt-8 pb-20 md:pt-20"
     >
       <RevealOnScroll>
         <div className="px-4">
