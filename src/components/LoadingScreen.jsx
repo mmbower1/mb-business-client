@@ -2,12 +2,14 @@ import { useEffect, useState } from "react";
 
 export const LoadingScreen = ({ onComplete }) => {
   const [text, setText] = useState();
+  const [progress, setProgress] = useState(0);
   const fullText = "Loading vite app...";
 
   useEffect(() => {
     let index = 0;
     const interval = setInterval(() => {
       setText(fullText.substring(0, index));
+      setProgress((index / fullText.length) * 100);
       index++;
 
       if (index > fullText.length) {
@@ -27,9 +29,10 @@ export const LoadingScreen = ({ onComplete }) => {
         <span className="animate-blink ml-1"> | </span>
       </div>
       <div className="w-[200px] h-[2px] bg-gray-800 rounded relative overflow-hidden">
-        <div className="w-[40%] h-full bg-blue-500 shadow-[0_0_15px_#3b82f6] animate-loading-bar">
-          {" "}
-        </div>
+        <div
+          className="h-full bg-blue-500 shadow-[0_0_15px_#3b82f6] transition-[width] duration-100 ease-linear"
+          style={{ width: `${progress}%` }}
+        />
       </div>
     </div>
   );
