@@ -34,7 +34,7 @@ export const Projects = () => {
                 to prevent bad behaviors from users, such as notoriously ghosting. Rather than endless swiping, lets make dating how it should be, with true intentions. 
               </p>
 
-              <div className="flex flex-wrap gap-2 mb-4">
+              <div className="mt-6 flex flex-wrap gap-2 mb-4">
                 {["React", "Firebase", "Tailwind", "Vercel"].map(
                   (tech, key) => (
                     <span
@@ -67,7 +67,7 @@ export const Projects = () => {
                 your favorite Eagles products here with the Stripe API.
               </p>
 
-              <div className="flex flex-wrap gap-2 mb-4">
+              <div className="mt-6 flex flex-wrap gap-2 mb-4">
                 {["React", "Firebase", "Tailwind", "Vercel"].map(
                   (tech, key) => (
                     <span
@@ -100,7 +100,7 @@ export const Projects = () => {
                 speed, tire size, and AC usage.
               </p>
 
-              <div className="flex flex-wrap gap-2 mb-4">
+              <div className="mt-6 flex flex-wrap gap-2 mb-4">
                 {["React", "Javascript", "SCSS", "AWS"].map((tech, key) => (
                   <span
                     key={key}
@@ -130,7 +130,7 @@ export const Projects = () => {
                 Arbor business for the Davis and Sacramento region. Scaled with
                 Vite, React, Scss, Firebase and Vercel.
               </p>
-              <div className="flex flex-wrap gap-2">
+              <div className="mt-6 flex flex-wrap gap-2">
                 {["React", "Scss", "Firebase", "Vercel"].map((tech, key) => (
                   <span
                     key={key}
@@ -157,7 +157,7 @@ export const Projects = () => {
                 An oldie but goodie from 2018, pre AI days. Built from scratch with Vanilla JavaScript, HTML and CSS come test your
                 knowledge and find out your score.
               </p>
-              <div className="flex flex-wrap gap-2 mb-4">
+              <div className="mt-6 flex flex-wrap gap-2 mb-4">
                 {["HTML", "CSS", "JavaScript", "JQuery"].map((tech, key) => (
                   <span
                     key={key}
@@ -185,7 +185,7 @@ export const Projects = () => {
                 Scalable cloud infrastructure management with real-time
                 monitoring and automated scaling.
               </p>
-              <div className="flex flex-wrap gap-2 mb-4">
+              <div className="mt-6 flex flex-wrap gap-2 mb-4">
                 {["React", "NodeJS", "MongoDB", "AWS"].map((tech, key) => (
                   <span
                     key={key}
@@ -213,7 +213,7 @@ export const Projects = () => {
                 Scalable cloud infrastructure management with real-time
                 monitoring and automated scaling.
               </p>
-              <div className="flex flex-wrap gap-2 mb-4">
+              <div className="mt-6 flex flex-wrap gap-2 mb-4">
                 {["React", "NodeJS", "MongoDB", "AWS"].map((tech, key) => (
                   <span
                     key={key}
