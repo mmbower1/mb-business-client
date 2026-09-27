@@ -62,6 +62,21 @@ body {
   padding: 3rem 0;
 }
 
+@keyframes modal-pop {
+  from {
+    opacity: 0;
+    transform: scale(0.9) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.modal-pop {
+  animation: modal-pop 0.25s ease-out;
+}
+
 .reveal {
   opacity: 0;
   transform: translateY(20px);

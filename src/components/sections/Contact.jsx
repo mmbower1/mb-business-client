@@ -1,12 +1,22 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { RevealOnScroll } from "../RevealOnScroll";
 
 export const Contact = () => {
+  const [showSent, setShowSent] = useState(false);
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert("Thanks! Your message has been sent. I'll get back to you soon.");
+    setShowSent(true);
     e.target.reset();
   };
+
+  // close the popup with the Escape key
+  useEffect(() => {
+    if (!showSent) return;
+    const onKey = (e) => e.key === "Escape" && setShowSent(false);
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [showSent]);
 
   return (
     <section id="contact" className="">
@@ -120,6 +130,54 @@ export const Contact = () => {
           </form>
         </div>
       </RevealOnScroll>
+
+      {/* Message sent popup */}
+      {showSent && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm px-4"
+          onClick={() => setShowSent(false)}
+        >
+          <div
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="sent-title"
+            className="modal-pop w-full max-w-md rounded-2xl border border-blue-500/30 bg-slate-900/95 p-8 text-center shadow-2xl shadow-blue-500/20"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-blue-500 to-cyan-400 shadow-lg shadow-blue-500/40">
+              <svg
+                className="h-8 w-8 text-white"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="3"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
+            </div>
+            <h3
+              id="sent-title"
+              className="mb-3 text-2xl font-bold bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent"
+            >
+              Message Sent!
+            </h3>
+            <p className="mb-8 text-gray-300">
+              Thanks for reaching out. I'll get back to you soon.
+            </p>
+            <button
+              autoFocus
+              onClick={() => setShowSent(false)}
+              className="w-full rounded-lg bg-blue-600 py-3 px-8 font-semibold text-white transition-all duration-200 hover:bg-blue-700 hover:shadow-xl hover:shadow-blue-500/25 active:scale-95"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
     </section>
   );
 };
