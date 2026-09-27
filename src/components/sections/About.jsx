@@ -112,19 +112,20 @@ export const About = () => {
               <h3 className="text-xl font-bold mb-4">🏫 Education</h3>
               <ul className="list-disc list-inside text-gray-300 space-y-2">
                 <li>
+                  <strong>Sacramento City College,</strong> Cybersecurity and
+                  Network Assurance
+                </li>
+                <br />
+                <li>
                   <strong>
                     UC Davis Trilogy Professional & Continuing Education,
                   </strong>{" "}
-                  Web Development (2018)
+                  Full Stack Web Development (2018)
                 </li>
                 <br />
                 <li>
                   <strong>San Jose State University,</strong> B.A.
                   Communications (2015-17)
-                </li>
-                <br />
-                <li>
-                  <strong>Santa Barbara City College</strong> (2013-15)
                 </li>
               </ul>
             </div>
@@ -132,10 +133,15 @@ export const About = () => {
               <h3 className="text-xl font-bold mb-4">📁 Work Experience</h3>
               <div className="space-y-4 text-gray-300">
                 <div>
-                  <h4>Technician @ State of California (2024-2025)</h4>
+                  <h4>
+                    Full Stack Web Engineer @ Prestwood IT Solutions (Apr
+                    2026-Present)
+                  </h4>
+                  <br />
+                  <h4>Data Technician @ State of California (2024-2025)</h4>
                   <br />
                   <h4>
-                    IT Subject Matter Expert @ Solaredge Technologies
+                    Technical Support Engineer @ Solaredge Technologies
                     (2021-2023)
                   </h4>
                   <br />
