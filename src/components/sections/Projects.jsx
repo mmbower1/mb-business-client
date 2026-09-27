@@ -1,6 +1,7 @@
 // import Project from "./Project.jsx";
 
 import { RevealOnScroll } from "../RevealOnScroll";
+import { BackToTopArrow } from "../BackToTopArrow";
 
 export const Projects = () => {
   return (
@@ -10,6 +11,7 @@ export const Projects = () => {
     >
       <RevealOnScroll>
         <div className="max-w-5xl mx-auto px-4">
+          <BackToTopArrow />
           <h2
             className="            
             text-3xl 

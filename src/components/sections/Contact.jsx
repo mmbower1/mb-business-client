@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { RevealOnScroll } from "../RevealOnScroll";
+import { BackToTopArrow } from "../BackToTopArrow";
 
 export const Contact = () => {
   const [showSent, setShowSent] = useState(false);
@@ -22,6 +23,7 @@ export const Contact = () => {
     <section id="contact" className="">
       <RevealOnScroll>
         <div className="">
+          <BackToTopArrow />
           <h2
             className="text-3xl 
             font-bold 
