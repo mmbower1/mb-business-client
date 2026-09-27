@@ -5,7 +5,6 @@ import lockheartImg from "../../assets/projects/lockheart.jpg";
 import eaglesImg from "../../assets/projects/eagles.jpg";
 import teslaImg from "../../assets/projects/tesla.jpg";
 import arborImg from "../../assets/projects/arbor.jpg";
-import triviaImg from "../../assets/projects/trivia.jpg";
 
 const projects = [
   {
@@ -39,14 +38,6 @@ const projects = [
       "A freelance website built for a close friends' Horticulture Tree Arbor business for the Davis and Sacramento region. Scaled with Vite, React, Scss, Firebase and Vercel.",
     tech: ["React", "Scss", "Firebase", "Vercel"],
     link: "https://american-arbor.vercel.app/",
-  },
-  {
-    title: "Trivia",
-    image: triviaImg,
-    description:
-      "An oldie but goodie from 2018, pre AI days. Built from scratch with Vanilla JavaScript, HTML and CSS come test your knowledge and find out your score.",
-    tech: ["HTML", "CSS", "JavaScript", "JQuery"],
-    link: "https://trivia-game-rho-eight.vercel.app/",
   },
 ];
 

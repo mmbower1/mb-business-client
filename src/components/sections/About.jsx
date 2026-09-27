@@ -4,7 +4,7 @@ import { StatCounter } from "../StatCounter";
 
 const stats = [
   { value: 6, suffix: "+", label: "Years Experience" },
-  { value: 5, suffix: "", label: "Featured Projects" },
+  { value: 4, suffix: "", label: "Featured Projects" },
   { value: 50, suffix: "", label: "YouTube Videos" },
   { value: 14, suffix: "K+", label: "YouTube Views" },
 ];
