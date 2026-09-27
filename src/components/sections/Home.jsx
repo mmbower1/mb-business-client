@@ -21,7 +21,7 @@ import { FaAws, FaChevronDown, FaMapMarkerAlt } from "react-icons/fa";
 
 const roles = [
   "Full Stack Web Developer",
-  "Information Technology",
+  "IT Specialist",
   "Content Creator",
 ];
 
