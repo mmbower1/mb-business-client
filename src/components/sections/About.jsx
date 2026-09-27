@@ -156,7 +156,7 @@ export const About = () => {
               <ul className="list-disc list-inside text-gray-300 space-y-2">
                 <li>
                   <strong>Sacramento City College,</strong> Cybersecurity and
-                  Network Assurance
+                  Network Assurance (Current)
                 </li>
                 <br />
                 <li>
