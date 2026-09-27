@@ -155,7 +155,7 @@ export const About = () => {
             </div>
             <br />
             <br />
-            <div className="react-logo-container">
+            <div className="react-logo-container md:col-span-2">
               <a href="https://react.dev" target="_blank">
                 <img src={reactLogo} className="logo react" alt="React logo" />
               </a>
