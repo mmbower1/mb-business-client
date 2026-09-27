@@ -7,6 +7,7 @@ import { LoadingScreen } from "./components/LoadingScreen";
 import { MobileNav } from "./components/MobileNav";
 import { Navbar } from "./components/Navbar";
 import { Footer } from "./components/Footer";
+import { SectionDivider } from "./components/SectionDivider";
 
 import { About } from "./components/sections/About";
 import { Home } from "./components/sections/Home";
@@ -29,9 +30,13 @@ function App() {
         <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <MobileNav menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <Home />
+        <SectionDivider />
         <About />
+        <SectionDivider />
         <Youtube />
+        <SectionDivider />
         <Projects />
+        <SectionDivider />
         <Contact />
         <Footer />
       </div>

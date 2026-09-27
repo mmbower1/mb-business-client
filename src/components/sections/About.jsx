@@ -1,5 +1,42 @@
 import { RevealOnScroll } from "../RevealOnScroll";
 import reactLogo from "../../assets/react.svg";
+import { StatCounter } from "../StatCounter";
+
+const stats = [
+  { value: 6, suffix: "+", label: "Years Experience" },
+  { value: 5, suffix: "", label: "Featured Projects" },
+  { value: 50, suffix: "", label: "YouTube Videos" },
+  { value: 14, suffix: "K+", label: "YouTube Views" },
+];
+
+const jobs = [
+  {
+    role: "Full Stack Web Engineer",
+    company: "Prestwood IT Solutions",
+    dates: "Apr 2026 - Present",
+  },
+  {
+    role: "Data Technician",
+    company: "State of California",
+    dates: "2024 - 2025",
+  },
+  {
+    role: "Technical Support Engineer",
+    company: "Solaredge Technologies",
+    dates: "2021 - 2023",
+  },
+  {
+    role: "Software Engineer",
+    company: "Splash Factory LLC",
+    dates: "2019 - 2020",
+  },
+  { role: "Lead Code Mentor", company: "Hackingtons", dates: "2018 - 2019" },
+  {
+    role: "Software Developer",
+    company: "Tallac Networks",
+    dates: "2018 - 2019",
+  },
+];
 
 export const About = () => {
   const frontendSkills = [
@@ -51,17 +88,17 @@ export const About = () => {
           >
             About me
           </h2>
-          <div className="rounded-xl p-8 border-white/20 border hover:-translate-y-1 transition-all">
+          <div className="glow-card rounded-xl p-8 border-white/20 border">
             <p
               className="text-gray-300 mb-6"
               // style={{ "font-family": "Arial, sans-serif" }}
             >
               Full Stack Software Engineer and IT Specialist with 6+ years
-              building scalable, reliable web applications and resolving
-              complex technical issues. Skilled in JavaScript, TypeScript,
-              React, Node.js, REST APIs, and cloud platforms, with a proven
-              record of driving operational efficiency and strong user
-              experience outcomes.
+              building scalable, reliable web applications and resolving complex
+              technical issues. Skilled in JavaScript, TypeScript, React,
+              Node.js, REST APIs, and cloud platforms, with a proven record of
+              driving operational efficiency and strong user experience
+              outcomes.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-1 gap-6">
               <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
@@ -108,8 +145,13 @@ export const About = () => {
               </div>
             </div>
           </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
+            {stats.map((stat) => (
+              <StatCounter key={stat.label} {...stat} />
+            ))}
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-            <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
+            <div className="glow-card p-6 rounded-xl border-white/10 border">
               <h3 className="text-xl font-bold mb-4">🏫 Education</h3>
               <ul className="list-disc list-inside text-gray-300 space-y-2">
                 <li>
@@ -130,29 +172,23 @@ export const About = () => {
                 </li>
               </ul>
             </div>
-            <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
+            <div className="glow-card p-6 rounded-xl border-white/10 border">
               <h3 className="text-xl font-bold mb-4">📁 Work Experience</h3>
-              <div className="space-y-4 text-gray-300">
-                <div>
-                  <h4>
-                    Full Stack Web Engineer @ Prestwood IT Solutions (Apr
-                    2026-Present)
-                  </h4>
-                  <br />
-                  <h4>Data Technician @ State of California (2024-2025)</h4>
-                  <br />
-                  <h4>
-                    Technical Support Engineer @ Solaredge Technologies
-                    (2021-2023)
-                  </h4>
-                  <br />
-                  <h4>Software Engineer @ Splash Factory LLC (2019-2020)</h4>
-                  <br />
-                  <h4>Lead Code Mentor @ Hackingtons (2018-2019)</h4>
-                  <br />
-                  <h4>Software Developer @ Tallac Networks (2018-2019)</h4>
-                </div>
-              </div>
+              {/* Timeline */}
+              <ol className="ml-2 border-l border-blue-500/30 space-y-5">
+                {jobs.map((job, i) => (
+                  <li key={job.company} className="relative pl-6">
+                    <span
+                      className={`absolute -left-[6.5px] top-1.5 h-3 w-3 rounded-full bg-blue-500 ring-4 ring-blue-500/20 ${
+                        i === 0 ? "animate-pulse" : ""
+                      }`}
+                    />
+                    <p className="text-xs text-blue-400">{job.dates}</p>
+                    <h4 className="font-semibold text-gray-100">{job.role}</h4>
+                    <p className="text-sm text-gray-400">{job.company}</p>
+                  </li>
+                ))}
+              </ol>
             </div>
             <div className="react-logo-container md:col-span-2">
               <a href="https://react.dev" target="_blank">

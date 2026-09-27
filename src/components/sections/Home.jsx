@@ -60,11 +60,13 @@ export const Home = () => {
       <div className="relative z-10">
         <RevealOnScroll>
           <div className="text-center px-4 mt-28">
-            <img
-              src={profilePhoto}
-              alt=""
-              className="h-60 w-70 rounded-full mx-auto"
-            />
+            <div className="photo-ring">
+              <img
+                src={profilePhoto}
+                alt=""
+                className="h-60 w-70 rounded-full mx-auto"
+              />
+            </div>
             <br />
             <h1
               className="
@@ -96,7 +98,7 @@ export const Home = () => {
                 </React.Fragment>
               ))}
             </p>
-            <p className="mt-2 mb-8 flex items-center justify-center gap-2 text-gray-400">
+            <p className="mt-2 mb-8 flex items-center justify-center gap-2 whitespace-nowrap text-sm sm:text-base text-gray-400">
               <FaMapMarkerAlt className="text-blue-400" />
               Sacramento, CA • San Francisco, CA
             </p>

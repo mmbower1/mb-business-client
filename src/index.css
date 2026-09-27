@@ -83,9 +83,50 @@ body {
   animation-delay: -6s;
 }
 
+/* cards: blue glow + lift on hover */
+.glow-card {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.glow-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(59, 130, 246, 0.5);
+  box-shadow:
+    0 0 0 1px rgba(59, 130, 246, 0.25),
+    0 10px 40px -10px rgba(59, 130, 246, 0.45),
+    0 0 30px rgba(168, 85, 247, 0.15);
+}
+
+/* hero: rotating gradient ring around the profile photo */
+.photo-ring {
+  position: relative;
+  display: inline-block;
+  padding: 4px;
+  border-radius: 9999px;
+  overflow: hidden;
+  box-shadow: 0 0 40px rgba(59, 130, 246, 0.35);
+}
+
+.photo-ring::before {
+  content: "";
+  position: absolute;
+  inset: -50%;
+  background: conic-gradient(#3b82f6, #a855f7, #22d3ee, #3b82f6);
+  animation: spin 6s linear infinite;
+}
+
+.photo-ring > img {
+  position: relative;
+  display: block;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .tech-marquee-track,
-  .hero-blob {
+  .hero-blob,
+  .photo-ring::before {
     animation: none;
   }
 }
