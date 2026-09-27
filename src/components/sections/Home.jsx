@@ -19,6 +19,12 @@ import {
 } from "react-icons/si";
 import { FaAws, FaChevronDown, FaMapMarkerAlt } from "react-icons/fa";
 
+const roles = [
+  "Full Stack Web Developer",
+  "Information Technology",
+  "Content Creator",
+];
+
 const techStack = [
   { name: "React", Icon: SiReact },
   { name: "Node.js", Icon: SiNodedotjs },
@@ -75,8 +81,20 @@ export const Home = () => {
             >
               Matthew M. Bower
             </h1>
-            <p className="text-gray-200 text-xl md:text-2xl font-semibold">
-              Full Stack Web Developer
+            <p className="flex flex-col md:flex-row items-center justify-center gap-x-3 gap-y-1 text-gray-200 text-lg md:text-xl font-semibold">
+              {roles.map((role, i) => (
+                <React.Fragment key={role}>
+                  {i > 0 && (
+                    <span
+                      className="hidden md:inline text-blue-400"
+                      aria-hidden="true"
+                    >
+                      •
+                    </span>
+                  )}
+                  <span>{role}</span>
+                </React.Fragment>
+              ))}
             </p>
             <p className="mt-2 mb-8 flex items-center justify-center gap-2 text-gray-400">
               <FaMapMarkerAlt className="text-blue-400" />
@@ -122,7 +140,7 @@ export const Home = () => {
               </a>
             </div>
             {/* Tech stack ticker */}
-            <div className="tech-marquee relative left-1/2 mt-16 w-screen -translate-x-1/2 overflow-hidden">
+            <div className="tech-marquee mx-auto mt-16 w-[min(72rem,calc(100vw-2rem))] overflow-hidden">
               <div className="tech-marquee-track flex w-max">
                 {[...techStack, ...techStack].map(({ name, Icon }, i) => (
                   <div
