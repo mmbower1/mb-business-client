@@ -1,6 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
+import { SuccessPopup } from "./SuccessPopup";
 
 export const Footer = () => {
+  const [showSubscribed, setShowSubscribed] = useState(false);
+
+  const handleSubscribe = (e) => {
+    e.preventDefault();
+    setShowSubscribed(true);
+    e.target.reset();
+  };
+
   return (
     <footer className="bg-gray-900 text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -133,13 +142,22 @@ export const Footer = () => {
             <p className="text-gray-400 text-sm mb-4">
               Subscribe to get updates on new features and tips.
             </p>
-            <form className="flex flex-col sm:flex-row gap-2 w-full max-w-sm mx-auto">
+            <form
+              onSubmit={handleSubscribe}
+              className="flex flex-col sm:flex-row gap-2 w-full max-w-sm mx-auto"
+            >
               <input
                 type="email"
+                name="email"
+                required
+                aria-label="Your email"
                 placeholder="Your email"
                 className="flex-1 min-w-0 px-4 py-2 rounded-lg bg-gray-800 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500"
               />
-              <button className="px-6 py-2 bg-indigo-600 rounded-lg font-medium hover:bg-indigo-700 transition">
+              <button
+                type="submit"
+                className="px-6 py-2 bg-indigo-600 rounded-lg font-medium hover:bg-indigo-700 transition"
+              >
                 Subscribe
               </button>
             </form>
@@ -154,6 +172,14 @@ export const Footer = () => {
           </p>
         </div>
       </div>
+
+      {showSubscribed && (
+        <SuccessPopup
+          title="Subscribed!"
+          message="Thanks for subscribing. You'll get updates on new features and tips."
+          onClose={() => setShowSubscribed(false)}
+        />
+      )}
     </footer>
   );
 };
