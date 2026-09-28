@@ -11,6 +11,13 @@ html {
   scroll-padding-top: 4rem;
 }
 
+/* glide to #links instead of jumping, unless the user prefers reduced motion */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
 html,
 body {
   /* background: linear-gradient(to right, #ff7e5f, #feb47b); */
