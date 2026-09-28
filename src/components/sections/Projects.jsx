@@ -85,7 +85,7 @@ export const Projects = () => {
                 <h3 className="text-xl font-bold mb-2">{project.title}</h3>
                 <p>{project.description}</p>
 
-                <div className="mt-6 flex flex-wrap gap-2 mb-4">
+                <div className="mt-auto pt-6 flex flex-wrap gap-2">
                   {project.tech.map((tech) => (
                     <span
                       key={tech}
@@ -94,14 +94,6 @@ export const Projects = () => {
                       {tech}
                     </span>
                   ))}
-                </div>
-                <div className="mt-auto flex justify-between items-center">
-                  <a
-                    href={project.link}
-                    className="text-blue-400 hover:text-blue-300 transition-colors my-4"
-                  >
-                    View Project →
-                  </a>
                 </div>
               </div>
             ))}
