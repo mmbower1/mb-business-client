@@ -1,12 +1,21 @@
 import { RevealOnScroll } from "../RevealOnScroll";
 import { BackToTopArrow } from "../BackToTopArrow";
 
+import scrollImg from "../../assets/projects/scroll.jpg";
 import lockheartImg from "../../assets/projects/lockheart.jpg";
 import eaglesImg from "../../assets/projects/eagles.jpg";
 import teslaImg from "../../assets/projects/tesla.jpg";
 import arborImg from "../../assets/projects/arbor.jpg";
 
 const projects = [
+  {
+    title: "Scroll.care",
+    image: scrollImg,
+    description:
+      "Web app for Scroll.care, a platform that helps people find vetted care services like home care, care coordination and healthcare advocacy. Users describe what's going on, get matched with verified Care Service Providers in their area, and can sign in with email or Google. Built with React, Supabase for auth and data, Stripe for payments, and multi-language support.",
+    tech: ["React", "Supabase", "Stripe", "Netlify"],
+    link: "https://app.scroll.care",
+  },
   {
     title: "Lockheart Dating",
     image: lockheartImg,
