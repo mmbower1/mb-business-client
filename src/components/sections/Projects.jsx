@@ -18,6 +18,14 @@ const projects = [
     link: "https://app.scroll.care",
   },
   {
+    title: "OffRecord Collective",
+    image: offrecordImg,
+    description:
+      "Portfolio website for OffRecord Collective, a San Francisco based live music photography brand capturing concerts and festivals on stage and behind the scenes. Features curated artists like Martin Garrix, Zeds Dead, and Louis The Child, plus a booking inquiry section.",
+    tech: ["Wix", "Responsive Design", "SEO"],
+    link: "https://www.offrecordcollective.com",
+  },
+  {
     title: "Lockheart Dating",
     image: lockheartImg,
     description:
@@ -48,14 +56,6 @@ const projects = [
       "A freelance website built for a close friends' Horticulture Tree Arbor business for the Davis and Sacramento region. Scaled with Vite, React, Scss, Firebase and Vercel.",
     tech: ["React", "Scss", "Firebase", "Vercel"],
     link: "https://american-arbor.vercel.app/",
-  },
-  {
-    title: "OffRecord Collective",
-    image: offrecordImg,
-    description:
-      "Portfolio website for OffRecord Collective, a San Francisco based live music photography brand capturing concerts, festivals, and artist performances on stage, behind the scenes, and in the crowd. Features a curated Selects gallery of artists like Martin Garrix, Zeds Dead, and Louis The Child, plus a booking inquiry section.",
-    tech: ["Wix", "Responsive Design", "SEO"],
-    link: "https://www.offrecordcollective.com",
   },
 ];
 
