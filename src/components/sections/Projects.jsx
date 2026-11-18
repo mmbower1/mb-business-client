@@ -21,7 +21,7 @@ const projects = [
     title: "OffRecord Collective",
     image: offrecordImg,
     description:
-      "Portfolio website for OffRecord Collective, a San Francisco based live music photography brand capturing concerts and festivals on stage and behind the scenes. Features curated artists like Martin Garrix, Zeds Dead, and Louis The Child, plus a booking inquiry section.",
+      "Portfolio website for OffRecord Collective, a San Francisco based live music photography brand that captures concerts and festivals from the stage to behind the scenes. Showcases shots of artists like Martin Garrix, Zeds Dead, and Louis The Child, with a booking inquiry section for shows and tours.",
     tech: ["Wix", "Responsive Design", "SEO"],
     link: "https://www.offrecordcollective.com",
   },
